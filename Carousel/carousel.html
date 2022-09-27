@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Carousel</title>
+</head>
+    <body>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators of carousel-->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active" ; style="background-color: coral;"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" ; style="background-color: coral;"></li>
+                    <li data-target="#myCarousel" data-slide-to="2" ; style="background-color: coral;"></li>
+                    <li data-target="#myCarousel" data-slide-to="3" ; style="background-color: coral;"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="pics\img1.jpg" style="width:100%; height:450px;">
+                        <div class="carousel-caption">
+                            <h3>Trainings</h3>
+                            <p>Course on PHP</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pics\img2.jpg" style="width:100%; height:450px;">
+                        <div class="carousel-caption">
+                            <h3>Trainings</h3>
+                            <p>Course on Web Designing</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pics\img3.jpg" style="width:100%; height:450px;">
+                        <div class="carousel-caption">
+                            <h3>Trainings</h3>
+                            <p>Course on Android Development</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pics\img4.jpg" style="width:100%; height:450px;">
+                        <div class="carousel-caption">
+                            <h3>Trainings</h3>
+                            <p>Course on Figma</p>
+                        </div>
+                    </div>
+                </div>
+<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" style="color:green"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" style="color:green"></span>
+  </a>
+  <a href="#" class="ws_playpause ws_pause"><span><i></i><b></b></span></a>
+        </div>
+    </body>
+</html>
