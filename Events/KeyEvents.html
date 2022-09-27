@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<title>keyevent</title>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("input").keydown(function(){
+                    $("input").css("background-color", "pink");
+                });
+                $("input").keyup(function(){
+                    $("input").css("background-color", "grey");
+                });
+                var x=0;
+                $("input").keypress(function(){
+                    $("span").text(x+=1);
+                });
+            });   
+        </script>
+	</head>
+    <body>
+        <h3>Demo of Keyevent</h3>
+        <form>
+            Name:<input required="">
+            <p>Keypress: <span>0</span></p>
+        </form>
+    </body>
+</html>

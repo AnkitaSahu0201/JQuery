@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>change event</title>
+    <script>
+        $(document).ready(function(){
+            $("#city").change(function(){
+                var name= $(this).val();
+                alert(name);
+            });   
+        });
+
+    </script>
+</head>
+<body>
+    <h3>Demo of change Event</h3>
+    <form>
+        Select City:<select id="city">
+            <option>Jhansi</option>           
+            <option>Gwalior</option>         
+            <option>Bhopal</option>
+            <option>Agra</option>
+            <option>Noida</option>
+            <option>Indore</option>  
+        </select>
+    </form>
+    
+</body>
+</html>
