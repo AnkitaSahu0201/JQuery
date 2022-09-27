@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<title>Effects in jQuery</title>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("#box").hide(3000);
+                })
+                $("#show").click(function(){
+                    $("#box").show(3000);
+                });
+                $("#tbutton").click(function(){
+                    $("#tbox").toggle();
+                })
+                $("#b-fin").click(function(){
+                    $("#fbox").fadeIn(2000);
+                })
+                $("#b-fout").click(function(){
+                    $("#fbox").fadeOut(2000);
+                })
+                $("#b-ftoggle").click(function(){
+                    $("#ftbox").fadeToggle(2000);
+                })
+                $("#b-fto").click(function(){
+                    $("#ftobox").fadeTo("slow", 0.15,"swing");
+                })
+                $("#b-sup").click(function(){
+                    $("#sbox").slideUp(2000);
+                })
+                $("#b-sdown").click(function(){
+                    $("#sbox").slideDown(2000);
+                })
+                $("#b-sltoggle").click(function(){
+                    $("#slbox").slideToggle(2000);
+                })
+            })
+        </script>
+        <style>
+            button{
+                cursor:pointer;
+            }
+            #box{
+                margin-bottom:5px;
+                padding:12px;
+                height:100px; 
+                width:125px; 
+                background-color:red;
+            }
+        </style>
+	</head>
+    <body>
+        <div style="text-align:center">
+            <h1>Effects in jQuery</h1>
+            <div style="background-color: bisque">
+                <h2>Display Effect</h2>
+                <h2>Hide and Show effect</h2>
+                <div id="box"></div>
+                <button id="hide">Hide </button>
+                <button id="show">Show </button>
+                <br><br>
+                <div style="background-color: bisque">
+                    <h2>Toggle effect</h2>
+                    <div id="tbox" style="margin-bottom:5px; padding:12px; height:100px; width:125px; background-color:green"></div>
+                    <button id="tbutton"> Toggle between hiding and showing</button> 
+                </div>
+            </div>
+            <div style="background-color: bisque">
+                <h2>Fading effect</h2>
+                <br><br>
+                <h2>fadeIn & fadeOut</h2>
+                <div id="fbox" style="margin-bottom:5px; padding:12px; height:100px; width:125px; background-color:rgb(89, 0, 255);"></div>
+                <button id="b-fout">Fade out</button>
+                <button id="b-fin">Fade in</button>
+                <br><br>
+                <h2>fadeToggle</h2>
+                <div id="ftbox" style="margin-bottom:5px; padding:12px; height:100px; width:125px; background-color:rgb(115, 255, 0);"></div>
+                <button id="b-ftoggle">Toggle Box</button>
+                <br><br>
+                <h2>fadeTo</h2>
+                <div id="ftobox" style="margin-bottom:5px; padding:12px; height:100px; width:125px; background-color:brown;"></div>
+                <button id="b-fto">Click to fade boxes</button>
+            </div>
+            <div style="background-color: bisque">
+                <h2>Sliding Effect</h2>
+                <h2>slideUp & slideDown effect</h2>
+                <div id="sbox" style="margin-bottom:5px; padding:12px; height:100px; width:125px; background-color:rgb(137, 146, 3)"></div>
+                    <button id="b-sup">slideUp</button>
+                    <button id="b-sdown">SlideDown</button>
+                    <br><br>
+                    <h2>slideToggle</h2>
+                    <div id="slbox" style="margin-bottom:5px; padding:12px; height:100px; width:125px; background-color:rgb(115, 255, 0);"></div>
+                    <button id="b-sltoggle">slideToggle</button>
+                    <br><br> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
