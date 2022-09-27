@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="animate.js"></script> -->
+        <script>
+            $(document).ready(function(){
+                $('.bounce').click(function(){
+                    $("h1").addClass('animate__animated animate__bounce' );
+
+                    setTimeout(()=>{   
+                        $('h1').attr('class','');
+                    },1000);
+                    
+                });
+            
+                $('.flash').click(function(){
+                    $("h1").addClass('animate__animated animate__flash');   
+                            
+                    setTimeout(()=>{
+                    $('h1').attr('class','');
+                    },1000); 
+
+                    });
+                $('.pulse').click(function(){
+                    $("h1").addClass('animate__animated animate__pulse');
+                            
+                    setTimeout(()=>{ 
+                    $('h1').attr('class','');
+                    },1000);
+                
+                });
+                $('.rubberBand').click(function(){
+                    $("h1").addClass('animate__animated animate__rubberBand');
+                            
+                    setTimeout(()=>{   
+                    $('h1').attr('class','');
+                    },1000);
+                    });
+                $('.shakeX').click(function(){
+                    $("h1").addClass('animate__animated animate__shakeX');
+                    setTimeout(()=>{           
+                    },1000);
+                });
+                $('.shakeY').click(function(){
+                    $("h1").addClass('animate__animated animate__shakeY');
+                            
+                    setTimeout(()=>{          
+                        $('h1').attr('class','');
+                    },1000);
+                }); 
+                $('.headShake').click(function(){
+                    $("h1").addClass('animate__animated animate__headShake');
+                            
+                    setTimeout(()=>{    
+                        $('h1').attr('class','');
+                    },1000);
+                });
+                $('.swing').click(function(){
+                    $("h1").addClass('animate__animated animate__swing');
+                            
+                    setTimeout(()=>{   
+                        $('h1').attr('class','');
+                    },1000);
+                });
+                $('.tada').click(function(){
+                    $("h1").addClass('animate__animated animate__tada');
+                            
+                    setTimeout(()=>{   
+                        $('h1').attr('class','');
+                    },1000);
+                });
+                $('.wobble').click(function(){
+                    $("h1").addClass('animate__animated animate__wobble');
+                            
+                    setTimeout(()=>{    
+                        $('h1').attr('class','');
+                    },1000);
+                });
+                $('.jello').click(function(){
+                    $("h1").addClass('animate__animated animate__jello');
+                            
+                    setTimeout(()=>{   
+                        $('h1').attr('class','');
+                    },1000);
+                });
+                $('.heartBeat').click(function(){
+                    $("h1").addClass('animate__animated animate__heartBeat');
+                            
+                    setTimeout(()=>{   
+                        $('h1').attr('class','');
+                    },1000);
+                });
+            });
+        </script>
+		<title>Animation in jQuery</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+              
+                <div class="col-md-9 lefttext">
+                    <h1><b>Animate.css</b></h1>
+                    <p style="color:white">Just-add-water CSS animations</p>
+                </div>
+                <div class="col-md-3 righttext">
+                    <ul style="list-style-type:none; font-size: 20px;">
+                        <b><li>Attention seekers</li>
+                        <li class="bounce">bounce</li>
+                        <li class="flash">flash</li> 
+                        <li class="pulse">pulse</li>
+                        <li class="rubberBand">rubberBand</li>
+                        <li class="shakeX">shakeX</li>
+                        <li class="shakeY">shakeY</li>
+                        <li class="headShake">headShake</li>
+                        <li class="swing">swing</li>
+                        <li class="tada">tada</li>
+                        <li class="wobble">wobble</li>
+                        <li class="jello">jello</li>
+                        <li class="heartBeat">heartBeat</li></b>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
