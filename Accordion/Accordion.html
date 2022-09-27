@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <title>Accordion Example</title>
+    <style>
+    p{
+        color:rgb(54, 26, 156);
+    }
+    </style>
+    <script>  
+        $(function() {  
+            $( "#accordion1" ).accordion({
+            heightStyle: "fill"
+            });
+            $( "#accordion2" ).accordion({
+            heightStyle: "content"
+            });
+        });
+          
+        </script>  
+</head>
+<body>
+    <h3 style="color:darkgreen">Height style-Fill </h3>
+    <div style = "height:250px;">
+        <div id="accordion1" >
+            <h3>
+                Tab 1 
+            </h3>
+            <div>
+                <p>
+                    The accordion (options) method specifies that an HTML element and its contents should be treated and managed as accordion menus. The options parameter is an object that specifies the appearance and behavior of the menu involved.
+                </p>
+            </div>
+
+
+            <h3>
+                Tab 2 
+            </h3>
+            <div>
+                <p>
+                    The accordion (options) method specifies that an HTML element and its contents should be treated and managed as accordion menus. The options parameter is an object that specifies the appearance and behavior of the menu involved.
+                </p>
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                </ul>
+            </div>
+
+
+            <h3>
+                Tab 3 
+            </h3>
+            <div>
+                <p>
+                    The accordion (options) method specifies that an HTML element and its contents should be treated and managed as accordion menus. The options parameter is an object that specifies the appearance and behavior of the menu involved.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3 style="color:blue">Height style content</h3>
+    <div style = "height:250px">
+        <div id="accordion2">
+            <h3>
+                Tab 1 
+            </h3>
+            <div>
+                <p>
+                    The accordion (options) method specifies that an HTML element and its contents should be treated and managed as accordion menus. The options parameter is an object that specifies the appearance and behavior of the menu involved.
+                </p>
+            </div>
+
+
+            <h3>
+                Tab 2 
+            </h3>
+            <div>
+                <p>
+                    The accordion (options) method specifies that an HTML element and its contents should be treated and managed as accordion menus. The options parameter is an object that specifies the appearance and behavior of the menu involved.
+                </p>
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>one</li>
+                    <li>two</li>
+                </ul>
+            </div>
+
+
+            <h3>
+                Tab 3 
+            </h3>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
